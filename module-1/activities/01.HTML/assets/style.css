@@ -1,0 +1,29 @@
+
+
+
+img {
+  width: 200px;
+  height: 200px;
+  
+}
+h1{
+  font-family: serif;
+  font-weight: bold;
+  background-color: darkgrey;
+  width: 200px;
+  text-align: center;
+  color: rgb(223, 20, 128);
+}
+h2{
+  background-color: aquamarine;
+  width: 120px;
+  font-family:monospace;
+}
+.contact{
+  background-color: aquamarine;
+  width: 130px;
+  font-family:monospace;
+}
+p{
+  color: rgb(3, 26, 68);
+}
