@@ -38,4 +38,29 @@ a{
   color: #d9dcd6;
   text-decoration: none;
 }
+p{
+  font-size: 16px;
+}
+.hero{
+  height: 800xpx;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(../images/digital-marketing-meeting.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.float-left{
+  float:left;
+  margin-left: 25px;
+}
+.float-right{
+  float: right;
+  margin-left: 25px;
+}
+.content{
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
 
