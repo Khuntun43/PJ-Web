@@ -68,7 +68,40 @@ function generatePassword() {
   let includeLowerCase = confirm("Include lowercase letters?");
   let includeNumber = confirm("Include lowercase?");
   let includeSpecialCharacter = confirm("Include special characters?");
-}
+
+//  Checked if at least one character type is selected
+
+  if (
+    !includeUpperCase &&
+    !includeLowerCase &&
+    !includeNumber &&
+    !includeSpecialCharacter
+  ) {
+    alert("At least one character type must me selected.");
+    return "";
+    // Exit function if no character types are selected
+  }
+  // Generate the password based on the selected option
+  let availableChar = ""
+  if (includeUpperCase) {
+    availableChar +="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  }
+  if (includeLowerCase) {
+    availableChar +="abcdefghijklmnopqrstuvwxyz";
+  }
+  if (includeNumber) {
+    availableChar +="1234567890";
+  }
+  if (includeSpecialCharacter) {
+    availableChar +="!@#$%^&*()_+-=[]{}|;:,.<>?";
+  }
+  // Generate the password
+  for (let i = 0; i < passwordLength; i++){
+    let randomIndex = Math.floor(Math.random() * availableChar.length);
+    password += availableChar.charAt(randomIndex);
+  }
+  return password;
+  }
 
 
 var generateBtn = document.querySelector("#generate");
